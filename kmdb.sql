@@ -101,8 +101,8 @@
 -- The Dark Knight Rises  Anne Hathaway         Selina Kyle
 
 -- Turns column mode on but headers off
---.mode column on
---.headers off
+.mode column on
+.headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 
@@ -336,6 +336,9 @@ INSERT INTO Top_Cast (
 -- The SQL statement for the movies output
 -- TODO!
 
+SELECT title, year_released, MPAA_rating, studio 
+FROM movies;
+
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -346,3 +349,5 @@ INSERT INTO Top_Cast (
 -- The SQL statement for the cast output
 -- TODO!
 
+SELECT title, actor_name, character_name
+FROM Top_Cast;
