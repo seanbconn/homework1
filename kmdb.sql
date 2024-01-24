@@ -37,6 +37,15 @@
 -- - Selection of data, so that something similar to the sample "report"
 --   below can be achieved.
 
+CREATE TABLE Batman_Trilogy_Nolan (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year_released TEXT,
+    MPAA_rating TEXT,
+    studio TEXT
+);
+
+
 -- Rubric
 --
 -- 1. Domain model - 6 points
@@ -130,3 +139,4 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
