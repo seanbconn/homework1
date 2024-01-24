@@ -101,8 +101,8 @@
 -- The Dark Knight Rises  Anne Hathaway         Selina Kyle
 
 -- Turns column mode on but headers off
-.mode column
-.headers off
+--.mode column on
+--.headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 
@@ -112,7 +112,7 @@ DROP TABLE IF EXISTS Top_Cast;
 -- Create new tables, according to your domain model
 -- TODO!
 
-CREATE TABLE Movies(
+CREATE TABLE Movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     year_released TEXT,
@@ -142,7 +142,7 @@ INSERT INTO Movies (
     "2005",
     "PG-13",
     "Warner Bros."
-)
+);
 
 INSERT INTO Movies (
     title,
@@ -153,8 +153,8 @@ INSERT INTO Movies (
     "The Dark Knight",
     "2008",
     "PG-13",
-    "Warner Bros,"
-)
+    "Warner Bros."
+);
 
 INSERT INTO Movies (
     title,
@@ -166,6 +166,166 @@ INSERT INTO Movies (
     "2012",
     "PG-13",
     "Warner Bros."
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "Batman Begins",
+    "Christian Bale",
+    "Bruce Wayne"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "Batman Begins",
+    "Michael Caine",
+    "Alfred"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "Batman Begins",
+    "Liam Neeson",
+    "Ra'a Al Ghul"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "Batman Begins",
+    "Katie Holmes",
+    "Rachel Dawes"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "Batman Begins",
+    "Gary Oldman",
+    "Commissioner Gordon"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight",
+    "Christian Bale",
+    "Bruce Wayne"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight",
+    "Heath Ledger",
+    "Joker"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight",
+    "Aaron Eckhart",
+    "Harvey Dent"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight",
+    "Michael Caine",
+    "Alfred"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight",
+    "Maggie Gyllenhaal",
+    "Rachel Dawes"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Christian Bale",
+    "Bruce Wayne"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Gary Oldman",
+    "Commissioner Gordon"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Tom Hardy",
+    "Bane"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Gary Oldman",
+    "Commissioner Gordon"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Joseph Gordeon-Levitt",
+    "John Blake"
+);
+
+INSERT INTO Top_Cast (
+    title,
+    actor_name,
+    character_name
+) VALUES (
+    "The Dark Knight Rises",
+    "Anne Hathaway",
+    "Selina Kyle"
 );
 
 -- Prints a header for the movies output
