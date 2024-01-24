@@ -37,7 +37,9 @@
 -- - Selection of data, so that something similar to the sample "report"
 --   below can be achieved.
 
-CREATE TABLE Batman_Trilogy_Nolan (
+DROP TABLE IF EXISTS Movies;
+
+CREATE TABLE Movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     year_released TEXT,
